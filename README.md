@@ -45,8 +45,10 @@ The Face potential has four local minima: the "eyes" are the deepest minima, and
 
 --> q: The variable q is the committor at the mesh points.
 
---> Rcurrent: The variable Rcurrent is Npts-by-2 array with components of the reactive current at the mesh points.
+--> Rcurrent: The variable Rcurrent is Npts-by-2 array with components of the reactive current at the mesh points. The reactive current is given by:
+$$ J_R = Z^{-1}\beta^{-1}e^{-\beta V(x)}\nabla q(x).$$
 
---> Rrate: The variable Rrate is the transition rate.
+--> Rrate: The variable Rrate is the transition rate given by:
+$$\nu_{AB} = Z^{-1}\beta^{-1}\int_{D\backslash(A\cup B)} \|\nabla q\|^2e^{-\beta V} dx.$$
 
 The mesh points, the committor, the reactive current are saved into a csv file.
