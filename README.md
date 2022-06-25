@@ -4,7 +4,7 @@ The Bondary Value Problem for the committor function for the overamped Langevin 
 
 $$dX = - \nabla V(X)dt + \sqrt{2\beta^{-1}}dW $$
 
-in the domain with a reflecting boundary given by $$D: = {x : V(x) \le Vbdry}$$
+in the domain with a reflecting boundary given by $$D: = \{x : V(x) \le V_{\rm bdry}\}$$
 
 $$\nabla \cdot ( \exp(-\beta V(x)) \nabla q(x)) = 0, ~~ x \in D \ (A\cup B)$$
 
