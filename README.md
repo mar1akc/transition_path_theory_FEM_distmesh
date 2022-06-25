@@ -4,13 +4,13 @@ The Bondary Value Problem for the committor function for the overamped Langevin 
 
 $$dX = - \nabla V(X)dt + \sqrt{2\beta^{-1}}dW $$
 
-in the domain with a reflecting boundary given by D: = {x : V(x) \le Vbdry} 
+in the domain with a reflecting boundary given by $$D: = {x : V(x) \le Vbdry}$$
 
-\nabla \cdot ( \exp(-\beta V(x)) \nabla q(x)) = 0, x \in D \ (A\cup B)
+$$\nabla \cdot ( \exp(-\beta V(x)) \nabla q(x)) = 0, ~~ x \in D \ (A\cup B)$$
 
-q(x) = 0, x \in A
+$$q(x) = 0,~~ x \in A$$
 
-q(x) = 1, x \in B
+$$q(x) = 1, ~~ x \in B$$
 
 The finite element solver is rewritten on python and adapted from:
 Title: Remarks around 50 lines of Matlab: short finite element implementation
