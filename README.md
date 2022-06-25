@@ -9,6 +9,7 @@ The finite element solver is rewritten on python and adapted from:
 Title: Remarks around 50 lines of Matlab: short finite element implementation
 Authors: Jochen Alberty, Carsten Carstensen and Stefan A. Funken
 Journal: Numerical Algorithms 20 (1999) 117–137
+https://www.math.hu-berlin.de/~cc/cc_homepage/download/1999-AJ_CC_FS-50_Lines_of_Matlab.pdf
 
 The mesh generator is Per-Olof Persson's distmesh algorithm rewritten on python:
 http://persson.berkeley.edu/distmesh/
