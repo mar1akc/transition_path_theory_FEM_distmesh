@@ -40,9 +40,9 @@ The package consists of the following files:
 Important settings in face_TPT_driver.ipynb:
 The Face potential has four local minima: the "eyes" are the deepest minima, and the "nose" and the "mouth" are shallower minima that can be considered as a dynamical trap.
 
---> The sets A and B are circles around the eyes centered at  (xa,ya), (xb,yb), of radii ra and rb, respectively.
+--> xa,ya,ra,xb,yb,rb: The sets A and B are circles around the eyes centered at  (xa,ya), (xb,yb), of radii ra and rb, respectively.
 
---> The outer boundary is the level set of the potential {(x,y) : V(x,y) = Vbdry}. 
+--> Vbdry: The outer boundary is the level set of the potential {(x,y) : V(x,y) = Vbdry}. 
 
 --> h0: The important parameter that determines how fine is the mesh is h0, the desired length of mesh edge.
 
