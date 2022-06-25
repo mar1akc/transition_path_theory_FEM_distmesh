@@ -22,20 +22,20 @@ face_TPT_driver.ipynb (shows how to compute the committor, the reactive current,
 Important settings in face_TPT_driver.ipynb:
 The Face potential has four local minima: the "eyes" are the deepest minima, and the "nose" and the "mouth" are shallower minima that can be considered as a dynamical trap.
 
---> The sets A and B are circles around the eyes centered at (xa,ya), (xb,yb), of radii ra and rb, respectively
+--> The sets A and B are circles around the eyes centered at (xa,ya), (xb,yb), of radii ra and rb, respectively.
 
---> The outer boundary is the level set of the potential {(x,y) : V(x,y) = Vbdry} 
+--> The outer boundary is the level set of the potential {(x,y) : V(x,y) = Vbdry}. 
 
---> h0: The important parameter that determines how fine is the mesh is h0, the desired length of mesh edge
+--> h0: The important parameter that determines how fine is the mesh is h0, the desired length of mesh edge.
 
 --> generate_mesh: The boolean variable generate_mesh determines whether the mesh needs to be generated or read from the files.
 
 --> Set generate_mesh = True for the first run. The generated mesh will be saved to files. If you want to experiment further with the same mesh, set generate_mesh = False. Then it will be read from the files.
 
---> q: The variable q is the committor at the mesh point
+--> q: The variable q is the committor at the mesh points.
 
---> Rcurrent: The variable Rcurrent is Npts-by-2 array with components of the reactive current at the mesh points
+--> Rcurrent: The variable Rcurrent is Npts-by-2 array with components of the reactive current at the mesh points.
 
---> Rrate: The variable Rrate is the transition rate
+--> Rrate: The variable Rrate is the transition rate.
 
 The mesh points, the committor, the reactive current are saved into a csv file.
