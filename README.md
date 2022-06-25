@@ -6,7 +6,7 @@ $$dX = - \nabla V(X)dt + \sqrt{2\beta^{-1}}dW $$
 
 in the domain with a reflecting boundary given by $$D: = \{x : V(x) \le V_{\rm bdry}\}$$
 
-$$\nabla \cdot \left( e^(-\beta V(x)) \nabla q(x)\right) = 0, ~~ x \in D \ (A\cup B)$$
+$$\nabla \cdot \left( e^{-\beta V(x)} \nabla q(x)\right) = 0, ~~ x \in D \ (A\cup B)$$
 
 $$q(x) = 0,~~ x \in A$$
 
