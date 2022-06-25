@@ -46,9 +46,7 @@ The Face potential has four local minima: the "eyes" are the deepest minima, and
 
 --> h0: The important parameter that determines how fine is the mesh is h0, the desired length of mesh edge.
 
---> generate_mesh: The boolean variable generate_mesh determines whether the mesh needs to be generated or read from the files.
-
---> Set generate_mesh = True for the first run. The generated mesh will be saved to files. If you want to experiment further with the same mesh, set generate_mesh = False. Then it will be read from the files.
+--> generate_mesh: The boolean variable generate_mesh determines whether the mesh needs to be generated or read from the files. Set generate_mesh = True for the first run. The generated mesh will be saved to files. If you want to experiment further with the same mesh, set generate_mesh = False. Then it will be read from the files.
 
 --> q: The variable q is the committor at the mesh points.
 
