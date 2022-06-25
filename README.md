@@ -6,6 +6,8 @@ $$dX = - \nabla V(X)dt + \sqrt{2\beta^{-1}}dW $$
 
 in the domain with a reflecting boundary given by $$D: = \left(x : V(x) \le V_{\rm bdry}\right)$$
 
+The invariant pdf is the Gibbs density $$\mu(x) = Z^{-1} e^{\beta V(x)},~~ Z = \int_{D} e^{-\beta V}dx.$$
+
 $$\nabla \cdot \left( e^{-\beta V(x)} \nabla q(x)\right) = 0, ~~ x \in D \backslash (A\cup B)$$
 
 $$q(x) = 0,~~ x \in A$$
