@@ -30,9 +30,12 @@ The mesh generator is Per-Olof Persson's distmesh algorithm rewritten on python:
 http://persson.berkeley.edu/distmesh/
 
 The package consists of the following files:
-distmesh.py (all functions needed for triangular mesh generation are there)
-FEM_TPT.py (all functions for computing the committor, the reactive current, and the transition rate are there)
-face_TPT_driver.ipynb (shows how to compute the committor, the reactive current, and the transition rate on the example of the Face potential)
+
+distmesh.py (all functions needed for triangular mesh generation are there);
+
+FEM_TPT.py (all functions for computing the committor, the reactive current, and the transition rate are there);
+
+face_TPT_driver.ipynb (shows how to compute the committor, the reactive current, and the transition rate on the example of the Face potential).
 
 Important settings in face_TPT_driver.ipynb:
 The Face potential has four local minima: the "eyes" are the deepest minima, and the "nose" and the "mouth" are shallower minima that can be considered as a dynamical trap.
