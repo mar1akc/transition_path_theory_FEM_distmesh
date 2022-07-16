@@ -50,7 +50,7 @@ def stima3(verts):
     rhs = np.zeros((3,2))
     rhs[1,0] = 1
     rhs[2,1] = 1
-    G = np.zeros((3,3))
+    G = np.zeros((3,2))
     G[:,0] = np.linalg.solve(Aux,rhs[:,0])
     G[:,1] = np.linalg.solve(Aux,rhs[:,1])
     M = 0.5*np.linalg.det(Aux)*np.matmul(G,np.transpose(G))
