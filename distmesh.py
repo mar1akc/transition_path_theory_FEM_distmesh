@@ -59,7 +59,9 @@ def fixmesh(pts,tri):
     idx_tri_reorder = np.reshape(idx_tri_reorder,(Nidx,))
     if np.any(idx_tri_reorder):
         # reorder triangles with negative area
-        tri[idx_tri_reorder,[0,1]] = tri[idx_tri_reorder,[1,0]]
+        tmp = tri[idx_tri_reorder,0]
+        tri[idx_tri_reorder,0] = tri[idx_tri_reorder,1]
+        tri[idx_tri_reorder,1] = tmp
     # remove triangles with too small area
     idx_keep = np.argwhere(np.absolute(A) > TOL*np.linalg.norm(A,np.inf))
     Nidx = np.size(idx_keep)
