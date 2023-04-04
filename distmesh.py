@@ -34,6 +34,30 @@ def drectangle(p,x1,x2,y1,y2):
     d2 = np.minimum(d1,-x1+p[:,0])
     return -np.minimum(d2,x2-p[:,0])
 
+def dline(p,x1,y1,x2,y2):
+    # signed distance from point p to line through (x1,y1) and  (x2,y2)
+    # normal vector to the line
+    nx = y1-y2
+    ny = x2-x1
+    nn = np.sqrt(nx*nx+ny*ny)
+    # return -(p-(x1,x2))*n/||n||
+    # the distance is negative in the direction of the normal
+    return -((p[:,0]-x1)*nx+(p[:,1]-y1)*ny)/nn
+    
+def dtriangle(p,x1,y1,x2,y2,x3,y3):
+    # vertices must be arranged counterclockwise
+    return np.maximum(dline(p,x1,y1,x2,y2),np.maximum(dline(p,x2,y2,x3,y3),dline(p,x3,y3,x1,y1)))
+
+def dpolygon(p,xy,n):
+    # vertices must be arranged counterclockwise
+    # the polygon must be convex
+    # n is the number of vertices
+    # xy must be n-by-2
+    aux = np.maximum(dline(p,xy[0,0],xy[0,1],xy[1,0],xy[1,1]),dline(p,xy[n-1,0],xy[n-1,1],xy[0,0],xy[0,1]))
+    for j in range(1,n-1):
+        aux = np.maximum(aux,dline(p,xy[j,0],xy[j,1],xy[j+1,0],xy[j+1,1]))
+    return aux    
+
 def dintersect(d1,d2):
     return np.maximum(d1,d2)
 
