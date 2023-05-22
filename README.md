@@ -15,9 +15,9 @@ This package allows you to compute the key descriptors of transition processes b
 
 The committors are computed using finite element method. The finite element method rewritten on python from:
 
-**[1]** Title: Remarks around 50 lines of Matlab: short finite element implementation
+**[1]** Title: ***Remarks around 50 lines of Matlab: short finite element implementation***
 
-Authors: Jochen Alberty, Carsten Carstensen and Stefan A. Funken
+Authors: ***Jochen Alberty, Carsten Carstensen and Stefan A. Funken***
 
 Journal: Numerical Algorithms 20 (1999) 117–137
 
@@ -27,7 +27,7 @@ The finite element committor solver and other functions for computing the functi
 
 **FEM_TPT.py**
 
-The mesh generator is Per-Olof Persson's distmesh algorithm rewritten on python:
+The mesh generator is ***Per-Olof Persson's distmesh algorithm*** rewritten on python:
 
 **[2]** http://persson.berkeley.edu/distmesh/
 
@@ -37,19 +37,19 @@ All functions relevant to mesh generation are found in
 
 **Test problems**
 
-(1) The overdampded Langevin dynamics in the face potential: **face_TPT_drive.ipynb**.
+(1) The ***overdampded Langevin dynamics*** in the face potential: **face_TPT_drive.ipynb**.
 
-(2) The overdampded Langevin dynamics in Mueller's potential: **Mueller_TPT_driver.ipynb**.
+(2) The ***overdampded Langevin dynamics*** in ***Mueller's*** potential: **Mueller_TPT_driver.ipynb**.
 
-(3) The noisy bistable Duffing oscillator (the Langevin dynamics): **Duffing_TPT_driver.ipynb**.
+(3) The noisy bistable ***Duffing oscillator*** (the Langevin dynamics): **Duffing_TPT_driver.ipynb**.
 
-(4) The Lennard-Jones-7 in the 2D space (the overdamped Langevin dynamics in collective variables): **LJ7_inCV_TPT_driver.ipynb**. The collective variables are the 2nd and 3rd central moments of coordination numbers. Auxiliary files: **helpers.py**. Input data: folder LJ7data. The mesh is generated using Darren Engwirda's algorithm mesh2d (search GitHub). The free energy and the diffusion matrix are computed by Luke Evans. 
+(4) The ***Lennard-Jones-7*** in the 2D space (the overdamped Langevin dynamics in collective variables): **LJ7_inCV_TPT_driver.ipynb**. The collective variables are the 2nd and 3rd central moments of coordination numbers. Auxiliary files: **helpers.py**. Input data: folder LJ7data. The mesh is generated using Darren Engwirda's algorithm mesh2d (search GitHub). The free energy and the diffusion matrix are computed by Luke Evans. 
 
 Test problems (2), (3), and (4) are worked out for the paper:
 
-**[3]** Title: Optimal control for sampling the transition path process and estimating rates.
+**[3]** Title: ***Optimal control for sampling the transition path process and estimating rates.***
 
-Authors: Jiaxin Yuan, Amar Shah, Channing Bentz, Maria Cameron
+Authors: ***Jiaxin Yuan, Amar Shah, Channing Bentz, and Maria Cameron***
 
 ArXiv: TBA (will be available soon)
 
