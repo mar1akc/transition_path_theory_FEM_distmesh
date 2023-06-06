@@ -51,7 +51,7 @@ Test problems (2), (3), and (4) are worked out for the paper:
 
 Authors: ***Jiaxin Yuan, Amar Shah, Channing Bentz, and Maria Cameron***
 
-ArXiv: TBA (will be available soon)
+ArXiv:2305.17112, https://arxiv.org/abs/2305.17112
 
 **Settings fror the overdamped Langevin dynamics**
 
