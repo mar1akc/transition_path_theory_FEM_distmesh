@@ -45,6 +45,10 @@ All functions relevant to mesh generation are found in
 
 (4) The ***Lennard-Jones-7*** in the 2D space (the overdamped Langevin dynamics in collective variables): **LJ7_inCV_TPT_driver.ipynb**. The collective variables are the 2nd and 3rd central moments of coordination numbers. Auxiliary files: **helpers.py**. Input data: folder LJ7data. The mesh is generated using Darren Engwirda's algorithm mesh2d (search GitHub). The free energy and the diffusion matrix are computed by Luke Evans. 
 
+(5) The ***overdampded Langevin dynamics*** in ***rugged Mueller's*** potential: **RuggedMueller_TPT_driver.ipynb** written by Zezheng Song.
+
+(6) The ***overdampded Langevin dynamics*** in ***double-well potential in 10D with A, B being sublevel sets***: DoubleWellHighDim.ipynb.
+
 Test problems (2), (3), and (4) are worked out for the paper:
 
 **[3]** Title: ***Optimal control for sampling the transition path process and estimating rates.***
